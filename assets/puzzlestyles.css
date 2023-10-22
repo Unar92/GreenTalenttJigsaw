@@ -1,0 +1,420 @@
+
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("csfonts/HelveticaNeue-Medium.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaBold";
+    src: url("csfonts/HelveticaNeue-Bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaLight";
+    src: url("csfonts/._HelveticaNeue.woff2");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+html,
+body {
+    
+    width: 100%;
+    /* height: calc(var(--vh, 1vh) * 100)*/
+    height: 100%;
+    background-color: #fff;
+    font-family: "HelveticaNeue";
+    position: relative;
+    margin: 0;
+    padding:0;
+    border: none;
+    
+
+}
+
+h1, h2, h3, h4, h5{
+  font-family: "HelveticaBold";
+}
+
+.puzzlepage-gulf img
+{
+  width:100px;
+  
+}
+
+.puzzlepage-mclaren img
+{
+  width:200px;
+ 
+  
+}
+
+
+  .timer-block
+  {
+    width: 550px;
+    font-weight: bold;
+  }
+
+.logo-container {
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    top: -30px;
+    
+    
+    z-index: 5;
+    
+  }
+  
+  .logo {
+    padding: 10px;
+  }
+  
+  
+.gulf img
+  {
+    width:100px;
+  }
+
+.mclaren img
+  {
+    width:300px;
+  }
+  
+  .divider {
+    width: 5px;
+    height: 50px;
+    background-color: #000;
+    margin: 0 20px;
+  }
+
+.content-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.content-divider {
+    width: 3px;
+    height: 100px;
+    background-color: #fff;
+    margin: 0 30px;
+  }
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 70%;
+}
+h1 {
+    font-family: "HelveticaBold";
+    color: #ffffff;
+}
+
+.f-orange {
+    color: #ff5828;
+}
+.f-blue
+{
+  color: #072068;
+}
+
+.quit{
+  
+
+  margin-top: 0px;
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  z-index: 5;
+}
+.quit-btn {
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    background-color: #ff5828;
+    padding: 0px 30px;
+    border-radius: 50px;
+    color: #ffffff;
+    border: none;
+    font-family: "HelveticaBold";
+    transition:  .35s ease-in-out;
+    justify-content: end;
+
+}
+
+.quit-btn:hover{
+
+background-color: #ffffff;
+color: #111111;
+box-shadow: #111111 0px 0px 10px 0px;
+}
+
+
+
+.ad-form label
+{
+    margin-top: 10px;
+
+}
+
+
+
+.car {
+    position: absolute; /* Make the container relative for absolute positioning */
+    width: 100%; /* Set a specific width for the container */
+    height: auto; /* Allow height to adjust according to aspect ratio */
+    overflow: hidden; /* Hide overflowing content */
+    bottom: 10px;
+  }
+  
+  .car img {
+    width: 100%; /* Make the image fill the container */
+    display: block;
+    position: relative;
+    bottom: 10px;
+    right: -130px;
+    transition: right 0.3s ease-in-out; /* Add smooth transition for animation */
+  }
+
+
+  
+  
+  .car-top-pos img{
+    width: 100%; /* Make the image fill the container */
+    display: flex;
+    
+    position: relative;
+
+  }
+
+  .bestscore {
+   
+    transform: skew(-30deg);
+    margin-left: 100px;
+    
+  }
+
+  .right-angled-border {
+    margin-top: 100px;
+    border-right: 10px solid transparent; /* Adjust the thickness as needed */
+    width: 350px;
+    transform: skew(30deg);
+    margin-left: -50px;
+    
+
+  }
+
+
+  .best-pos
+  {
+    margin-top: 120px;
+  }
+
+.big-font
+{
+  font-size: 100px;
+}
+
+
+.user-btn
+{
+  display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+
+.user-btn a
+{
+
+text-decoration: none;
+
+text-align: center;
+font-family: "HelveticaBold";
+border-radius: 50px;
+padding-right: 200px;
+padding-left: 200px;
+transition:  .35s ease-in-out;
+
+}
+
+.btn-white
+{
+  background-color: #ffffff;
+  color: #000;
+}
+.btn-orange
+{
+  background-color: #ff5828;
+color: #ffffff;
+}
+
+.animated-element,#success_message,#error_message {
+    opacity: 0;
+}
+
+
+/* puzzle css */
+#forPuzzle {
+  border:none;
+  left:0px;
+  top:0px;
+  z-index: 2;
+}
+#divmenu {
+  position:absolute;
+  top:5px;
+  left:15px;
+  width:0px;
+  height:0px;
+  cursor:default;
+  z-index:50001;
+  border-radius:5px;
+}
+#divmenu.open {
+  width:120px;
+  height:100px;
+  background-color:rgba(255,255,180,0.7);
+  z-index:50001;
+}
+
+#divmenu .title {
+  font-family: Verdana, "Bitstream Vera Sans", "Lucida Sans", sans-serif;
+  font-weight:bold;
+  font-size:15px;
+  position:absolute;
+  top:0px;
+  left:30px;
+  color:blue;
+  background-color:rgba(255,255,180,0.7);
+  padding:5px;
+  border-radius:5px;
+}
+
+#divmenu .line {
+  font-family: Verdana, "Bitstream Vera Sans", "Lucida Sans", sans-serif;
+  font-weight:bold;
+  font-size:15px;
+  text-align:center;
+  position:absolute;
+  width:100px;
+  left:5px;
+  color:blue;
+  padding:5px;
+  display:none;
+  border-radius:5px;
+}
+
+#divmenu.open .line {
+  display:block;
+}
+#divmenu.open .line:hover {
+  background-color: rgba(255,230,90,1);
+  cursor:pointer;
+}
+
+
+.previewimg
+{
+  width:300px;
+  position: absolute;
+  top: 200px;
+  right:34px;
+  z-index: 50009;
+
+}
+
+
+
+.user-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 70%;
+  position: absolute;
+  top: 200px;
+  left: 80px;
+  z-index: 7;
+  
+}
+
+.puzzlearea
+{
+  width: 90%;
+  height: 80vh;
+  position: absolute;
+  top:300px;
+  margin: 10px 50px;
+}
+.canvas-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.game-area {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 290px;
+  background: white;
+  z-index: 3;
+}
+.page-bg{
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 5;
+}
+.game-area.top{
+  bottom: calc(100vh - 100px);
+  height: 290px;
+  
+  border-bottom:1px solid #ccc;
+}
+.game-area.left,
+.game-area.right {
+  width: 100px;
+  top: 290px;
+  height: calc(100vh - 390px);
+}
+.game-area.left {
+  left: 0;
+  border-right: 1px solid #ccc;
+  z-index: 4;
+}
+.game-area.right {
+  right: 0;
+  left: auto;
+  border-left: 1px solid #ccc;
+  z-index: 4s;
+}
+.game-area.bottom {
+  top: calc(100vh - 100px);
+  height: 290px;
+  border-top:1px solid #ccc;
+ 
+}
+
+
+.puzzlearea
+{
+  position: absolute;
+  bottom: 50px;
+  left: 0px;
+}

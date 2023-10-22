@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+            body {
+      margin: 0;
+      padding:0;
+      border: none;
+      width: 800px;
+      height: 600px;
+      position: relative;
+    }
+    #forPuzzle {
+      border:none;
+      left:0px;
+      top:0px;
+    }
+    #divmenu {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  z-index: 50001;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Add a smooth transition */
+}
+
+#divmenu.open {
+  width: 200px;
+  height: auto !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 50001;
+}
+
+#divmenu .title {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  top: 0;
+  left: 0px;
+  color: #3498db;
+  background-color: rgba(0, 0, 0,0.8);
+  padding: 10px;
+  border-radius: 5px;
+  width: 180px;
+}
+
+#divmenu .line {
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  width: 150px;
+  margin: 5px auto;
+  color: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+#divmenu.open .line {
+  display: block;
+}
+
+#divmenu.open .line:hover {
+  background-color: #3498db;
+  cursor: pointer;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    </style>
+    </head>
+ 
+
+<body class="puzzlepage">
+    <div id="forPuzzle"></div>
+
+<img src="" id="gt_game">
+   
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/puzzle.js"></script>
+<script src="assets/function.js"></script>
+
+</body>
+</html>
